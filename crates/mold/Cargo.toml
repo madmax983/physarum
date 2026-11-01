@@ -1,0 +1,18 @@
+[package]
+name = "mold"
+description = "Physarum's engine: a slime mold on 384 cells, the trail it follows, moving agents between cells without dropping them, and counting who survived. No IO, no async, no clock."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+serde = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
+
+[lints]
+workspace = true
